@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    #index{
+      padding: 0;
+      margin: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(31, 25, 25);
+    }
+
+    #main1{
+      border: 2px solid black;
+      padding: 50px;
+      height: 40vh;
+      width: 20vw;
+      border-radius: 30px;
+      background-image: linear-gradient( to bottom left, rgb(1, 30, 68),hsl(215, 34%, 13%), rgb(1, 1, 33));
+      color: white;
+    }
+    .rating{      
+      margin-top: 40px;
+      display: flex; 
+      justify-content: space-between;
+    }
+    .rate{
+      width: 50px;
+      height: 50px;
+      border-radius:60px;
+      color: whitesmoke;
+      background-color:  rgba(52, 65, 130, 0.953);
+    }
+    .rate:hover{
+      background-color: grey;
+      cursor:pointer ;
+    }
+
+    .rate.clicked{
+      background-color: orange;
+    }
+
+    #submit{
+      background-color: rgb(237, 154, 0);
+      width: 315px;
+      height: 40px;
+      border-radius: 40px;
+      letter-spacing: 3px;
+      font-weight: bold;
+      color: white;
+    }
+    #submit:hover{
+      background-color: white;
+      color: rgb(237, 155, 2);
+      cursor: pointer;
+    }
+
+    
+
+    .attribution { 
+      font-size: 11px; text-align: center;
+      position: relative;
+      top: 6.5px; 
+      color: aliceblue;
+    }
+    .attribution a { color: wheat; }
+    
+    #main2{
+      display: none;
+    }
+
+              /*THANKS PAGE*/
+    #main2{
+      border: 2px solid black;
+      padding: 50px;
+      height: 40vh;
+      width: 20vw;
+      border-radius: 30px;
+      background-image: linear-gradient( to bottom left, rgb(1, 30, 68),hsl(215, 34%, 13%), rgb(1, 1, 33));
+      color: white;
+    }
+
+
+    #thkimage{
+        display: flex;
+        justify-content: center;
+    }
+   /* img{
+        width: 140px;
+    }*/
+
+    .rated{
+        position: relative;
+        left: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 185px;
+        height: 24px;
+        font-size:105%;
+        color: rgb(205, 129, 7);
+        background-image: linear-gradient( to top right, rgb(4, 43, 94),hsl(216, 91%, 13%), rgb(18, 18, 41));
+        border: 3px solid rgb(23, 0, 0);
+        border-radius: 10px;
+    }
+
+    h2{
+        display: flex;
+        justify-content: center;
+    }
+
+    .appreciating{
+        position: relative;
+        right: 20px;
+        word-spacing: 2px;
+        text-align: center;
+        width: 345px;
+        color: rgb(198, 197, 197);
+    }
+
+    
+  </style>
+</head>
+<body id="index">
+
+  <!-- Rating state start -->
+ <main id="main1">
+   <div class="star">
+    <img src="images/icon-star.svg" alt="star-icon">
+   </div>
+    <h2>How did we do?</h2>
+
+    <p>let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+
+    <div class="rating">
+      <button class="rate">1</button>
+      <button class="rate">2</button>
+      <button class="rate">3</button>
+      <button class="rate">4</button>
+      <button class="rate">5</button>
+    </div>
+    <br>
+    
+    <button id="submit"> SUBMIT  </button>
+    
+    <br><br>
+
+  </main>
+    <main id="main2">
+      <div id="thkimage">
+        <img src="images/illustration-thank-you.svg" alt="thanks image">
+      </div>
+      
+       <p class="rated">
+         You selected<span id="rate_given"></span>out of 5
+        </p>
+ 
+       <h2>Thank you!</h2>
+ 
+     <p class="appreciating"> We appreciate you taking the time to give a rating. If you ever need  more support, 
+      don’t hesitate to get in touch! </p>
+ 
+ 
+      <!-- Thank you state end -->
+ 
+      <br><br><br>
+    </main>
+
+   <div class="attribution">
+     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+     Coded by <a href="#">Shubham Rawat</a>.
+   </div>
+ <script src="./index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Rating state end -->
+
+    <!-- Thank you state start -->
+
+    <!--You selected--> <!-- Add rating here --><!-- out of 5
+
+    Thank you!
+
+    We appreciate you taking the time to give a rating. If you ever need  more support, 
+    don’t hesitate to get in touch!  -->
+
+    <!-- Thank you state end -->
+
+  
+    
